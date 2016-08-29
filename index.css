@@ -4,6 +4,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+#name {
+    font-size: 4em;
+    font-family: ArcadeClassic;
+    display: inline;
+    float: top;
+    margin-left: 35%;
+}
+#name a {
+    text-decoration: none;
+    color: white;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -12,9 +23,11 @@ ul {
     background-color: #333;
     float:left;
 }
+
 li {
     float: left;
 }
+
 li a {
     display: block;
     color: white;
@@ -30,12 +43,13 @@ li a:hover {
 li a:active {
     background-color: yellow;
 }
-button {
-    color: white;
-    text-align: center;
-    font-family: ArcadeClassic;
-    font-size: 1.4em;
-    background-color: #333;
+#current a {
+    color: yellow;
+}
+#fb-button {
+    display: inline;
+    float: left;
+    margin-top: 2em;
 }
 hr{
     width:100%;
@@ -48,52 +62,42 @@ h2 {
     margin-top: 2em;
     text-align: center;
 }
-h3 {
-    color: white;
-    font-family: ArcadeClassic;
-    font-size: 2.5em;
-}
 p {
     color: white;
     display: inline;
-    font-family: ArcadeClassic;
+    font-family: Jura;
     font-size: 1.2em;
 
-}
-#name {
-    font-size: 4em;
-    font-family: ArcadeClassic;
-    display: inline;
-    float: top;
-    margin-left: 35%;
-}
-#name a {
-    text-decoration: none;
-    color: white;
 }
 #hora {
     float: left;
     margin: 1.5em;
 }
-#current a {
-    color: yellow;
-}
-#fb-button {
-    display: inline;
-    float: left;
-    margin-top: 2em;
-}
 .video-cell {
     margin: 3em;
     list-style-type: none;
 }
-.game-description {
-    text-align: center;
-    display: block;
+
+NEW!!
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
 }
-.game-title {
-    text-align: center;
+a:hover.back-to-top {
+	background-color: #000;
 }
-.wrapper {
-    text-align: center;
+
+.simple-back-to-top{
+	text-align:middle;
 }

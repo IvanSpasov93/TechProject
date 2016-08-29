@@ -18,5 +18,28 @@
             <li><a href="about.html">ABOUT US</a></li>
             <li><a href="#">LOG IN</a></li>
         </ul>
+		<br>
+	<p><a href="#" class="simple-back-to-top"><img src="images/up-arrow.png"/></a></p>
+	<script type="text/javascript">
+	// create the back to top button
+	$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+	
+	var amountScrolled = 50;
+	
+	$(window).scroll(function() {
+		if ( $(window).scrollTop() > amountScrolled ) {
+			$('a.back-to-top').fadeIn('slow');
+		} else {
+			$('a.back-to-top').fadeOut('slow');
+		}
+	});
+	
+	$('a.back-to-top, a.simple-back-to-top').click(function() {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
+	});
+	</script>
 </body>
 </html>
